@@ -5,3 +5,10 @@ netty:
   default:
     allocator:
       max-order: 3
+datasource:
+  url: mysql://192.168.0.1:3306/abc
+my:
+  engine:
+    cylinders: 668
+  host: www.yumi.com
+  port: 80
