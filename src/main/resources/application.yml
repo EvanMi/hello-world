@@ -10,5 +10,13 @@ datasource:
 my:
   engine:
     cylinders: 668
+    manufacturer: "time to go!!"
+    color: RED
   host: www.yumi.com
   port: 80
+  jpa:
+    default:
+      hibernate:
+        hbm2ddl:
+          auto: update
+      show_sql: true
