@@ -1,6 +1,22 @@
 micronaut:
   application:
     name: helloWorld
+  executors:
+      io:
+        type: fixed
+        nThreads: 75
+  router:
+    versioning:
+      enabled: true
+      default-version: 3
+      parameter:
+        enabled: false
+        names: 'v,api-version'
+      header:
+        enabled: true
+        names:
+          - 'X-API-VERSION'
+          - 'Accept-Version'
 netty:
   default:
     allocator:
